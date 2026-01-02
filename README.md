@@ -5,5 +5,8 @@ Project to create App for Face Recognition
 - OpenCV https://opencv.org/
 - SpringBoot
 - SFace model
+- Maven
+### How to Install
+
   
 
