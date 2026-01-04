@@ -6,7 +6,7 @@ Project to create App for Face Recognition
 - SpringBoot
 - SFace model
 - Maven
-### How to Install
+### Setup
 
   
 
