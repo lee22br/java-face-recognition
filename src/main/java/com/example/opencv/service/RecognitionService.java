@@ -93,7 +93,7 @@ public class RecognitionService {
                 return tempFile.toAbsolutePath().toString();
             }
         } catch (IOException e) {
-            throw new RuntimeException("Falha ao carregar modelo SFace", e);
+            throw new RuntimeException("Loading Sface model fail", e);
         }
     }
 }
