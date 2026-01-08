@@ -42,11 +42,11 @@ public class RecognizeController {
 
     public static Mat loadFromBytesInMemory(byte[] bytes, String fileName) {
         if (bytes == null || bytes.length == 0)
-            throw new IllegalArgumentException("Arquivo vazio ou inválido: " + fileName);
+            throw new IllegalArgumentException("File is empty or invalid: " + fileName);
         MatOfByte mob = new MatOfByte(bytes);
         Mat image = Imgcodecs.imdecode(mob, Imgcodecs.IMREAD_COLOR);
         mob.release();
-        if (image.empty()) throw new IllegalArgumentException("Não foi possível decodificar a imagem: " + fileName);
+        if (image.empty()) throw new IllegalArgumentException("Is not possible to decode this image: " + fileName);
         return image;
     }
 }

@@ -22,8 +22,8 @@ public class RecognitionService {
     private final String sFaceModel = extractModelToTempFile("models/face_recognition_sface_2021dec.onnx");
     private final String yunetPath = extractModelToTempFile("models/face_detection_yunet_2023mar.onnx");
     private static final double THRESHOLD_COSINE = 0.363;
-    private static final float DETECT_THRESHOLD = 0.5f;
-    private static final float NMS_THRESHOLD = 0.3f;
+    private static final float DETECT_THRESHOLD = 0.54f;
+    private static final float NMS_THRESHOLD = 0.35f;
 
     static {
         Loader.load(opencv_java.class);
