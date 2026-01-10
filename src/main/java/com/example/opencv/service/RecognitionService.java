@@ -33,7 +33,7 @@ public class RecognitionService {
             sFaceModel,
             "",
             Dnn.DNN_BACKEND_OPENCV,
-            Dnn.DNN_TARGET_CPU
+            Dnn.DNN_TARGET_CUDA
     );
 
     private final FaceDetectorYN faceDetector = FaceDetectorYN.create(
